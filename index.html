@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Spotify Artist Search</title>
+		<link rel="stylesheet" href="main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="intro">
+			<div class="explanation">
+				<h1>Spotify Artist Search</h1>
+				<p>This app lets you find which artists music you can listen to using spotify</p>
+			</div>
+		</div>
+		<hr>
+		<div class="stack">	
+			<h3>Get artist</h3>
+			<p>Type in the name of an artist you are interested in.</p>
+			<form class="artist-getter" onsubmit="return false;">
+				<input type="text" placeholder='e.g., "Michael Jackson"' name="tags" size="30" autofocus required>
+				<input type="submit" value="Search">
+			</form>
+		</div>
+		<div class="results-container">
+			<div class="search-results"></div>
+			<div class="results"></div>
+		</div>
+	</div>	
+</body>
+</html>
